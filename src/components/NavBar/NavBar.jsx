@@ -2,12 +2,13 @@ import React from "react";
 import './NavBar.scss';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.svg';
-import {ReactComponent as Key} from '../../images/key-square.svg'
-import square from '../../images/3d-square.svg';
-import user from '../../images/user.svg';
-import wallet from '../../images/wallet-money.svg';
-import shape from '../../images/discount-shape.svg';
-import message from '../../images/message-question.svg';
+import { ReactComponent as Key } from '../../images/key-square.svg'
+import { ReactComponent as Square } from '../../images/3d-square.svg';
+import { ReactComponent as User } from '../../images/user.svg';
+import { ReactComponent as Wallet } from '../../images/wallet-money.svg';
+import { ReactComponent as Shape } from '../../images/discount-shape.svg';
+import { ReactComponent as Help } from '../../images/message-question.svg';
+import { ReactComponent as Row } from '../../images/chevron-right.svg';
 
 
 
@@ -34,7 +35,7 @@ export const NavBar = () => {
                   <Key className="icon" alt="square icon" />
                   <p className="nav__link--name">Dashboard</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
@@ -42,10 +43,10 @@ export const NavBar = () => {
             <NavLink to="/product" className="nav__link">
               <div className="nav__link-container">
                 <div className="nav__link--group">
-                  <img src={square} className="icon icon--link" alt="square icon" />
+                  <Square className="icon" alt="square icon" />
                   <p className="nav__link--name">Product</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
@@ -53,10 +54,11 @@ export const NavBar = () => {
             <NavLink to="/customers" className="nav__link">
               <div className="nav__link-container">
                 <div className="nav__link--group">
-                  <img src={user} className="icon icon--link" alt="square icon" />
+                  <User className="icon" alt="square icon" />
+
                   <p className="nav__link--name">Customers</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
@@ -64,10 +66,10 @@ export const NavBar = () => {
             <NavLink to="/income" className="nav__link">
               <div className="nav__link-container">
                 <div className="nav__link--group">
-                  <img src={wallet} className="icon" alt="square icon" />
+                  <Wallet className="icon" alt="square icon" />
                   <p className="nav__link--name">Income</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
@@ -75,22 +77,22 @@ export const NavBar = () => {
             <NavLink to="/promote" className="nav__link">
               <div className="nav__link-container">
                 <div className="nav__link--group">
-                  <img src={shape} className="icon" alt="square icon" />
+                  <Shape className="icon" alt="square icon" />
                   <p className="nav__link--name">Promote</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
-          
+
           <li className="nav__item">
             <NavLink to="/help" className="nav__link">
               <div className="nav__link-container">
                 <div className="nav__link--group">
-                  <img src={message} className="icon" alt="square icon" />
+                  <Help className="icon" alt="square icon" />
                   <p className="nav__link--name">Help</p>
                 </div>
-                <div className="icon--row"></div>
+                <Row className="icon--row" />
               </div>
             </NavLink>
           </li>
